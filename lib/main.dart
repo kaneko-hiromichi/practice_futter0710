@@ -1,5 +1,5 @@
+import 'shape_move.dart';
 import 'shapes.dart';
-
 import 'text_field.dart';
 import 'text_send.dart';
 import 'package:flutter/material.dart';
@@ -130,6 +130,15 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('ShapesPage'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ShapeMovePage()),
+                );
+              },
+              child: const Text('ShapeMove'),
             ),
           ],
         ),

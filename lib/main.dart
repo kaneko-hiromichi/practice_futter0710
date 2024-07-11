@@ -1,4 +1,5 @@
-import 'package:app_0710/http.dart';
+import 'chat.dart';
+import 'http.dart';
 
 import 'shape_move.dart';
 import 'shapes.dart';
@@ -150,6 +151,15 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('HttpPage'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatPage()),
+                );
+              },
+              child: const Text('ChatPage'),
             ),
           ],
         ),

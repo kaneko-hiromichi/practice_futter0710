@@ -1,5 +1,7 @@
+import 'shapes.dart';
+
 import 'text_field.dart';
-import 'package:app_0710/text_send.dart';
+import 'text_send.dart';
 import 'package:flutter/material.dart';
 import 'AB_button.dart';
 import 'message_button.dart';
@@ -47,7 +49,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => CounterPage()),
                 );
               },
-              child: const Text('Go to Counter Page'),
+              child: const Text('Counter Page'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -56,7 +58,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => ToDoPage()),
                 );
               },
-              child: const Text('Go to To-Do List Page'),
+              child: const Text('To-Do List Page'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -65,7 +67,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => FormPage()),
                 );
               },
-              child: const Text('Go to Form Page'),
+              child: const Text('Form Page'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -74,7 +76,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => TheSimple()),
                 );
               },
-              child: const Text('Go to TheSimple'),
+              child: const Text('TheSimple'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -83,7 +85,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => MessageButton()),
                 );
               },
-              child: const Text('Go to MessageButton'),
+              child: const Text('MessageButton'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -92,7 +94,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => ABButton()),
                 );
               },
-              child: const Text('Go to ABButton'),
+              child: const Text('ABButton'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -101,7 +103,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => TextFieldPage()),
                 );
               },
-              child: const Text('Go to TextFieldPage'),
+              child: const Text('TextFieldPage'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -110,7 +112,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => TextSendPage()),
                 );
               },
-              child: const Text('Go to TextSendPage'),
+              child: const Text('TextSendPage'),
             ),
             ElevatedButton(
                 onPressed: () {
@@ -119,7 +121,16 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => TextPage()),
                   );
                 },
-                child: const Text('Go to TextPage')),
+                child: const Text('TextPage')),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ShapesPage()),
+                );
+              },
+              child: const Text('ShapesPage'),
+            ),
           ],
         ),
       ),

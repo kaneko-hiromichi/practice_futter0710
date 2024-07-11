@@ -1,3 +1,5 @@
+import 'package:app_0710/http.dart';
+
 import 'shape_move.dart';
 import 'shapes.dart';
 import 'text_field.dart';
@@ -139,6 +141,15 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('ShapeMove'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HttpPage()),
+                );
+              },
+              child: const Text('HttpPage'),
             ),
           ],
         ),
